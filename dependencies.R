@@ -17,4 +17,9 @@ if (!require('ROCR')){install.packages('ROCR')}; library(ROCR)
 if (!require('pROC')){install.packages('pROC')}; library(pROC)
 if (!require('MLmetrics')){install.packages('MLmetrics')}; library(MLmetrics)
 
-
+suppressPackageStartupMessages({
+  if (!require("stringi")){install.packages("stringi", dependencies=TRUE)}; library("stringi")  
+  if (!require("randomForest")){install.packages("randomForest")}; library("randomForest")
+  if (!require("ROCR")){install.packages("ROCR")}; library("ROCR")
+  if (!require("caret")){install.packages("caret", dependencies=TRUE)}; library("caret")
+  })
